@@ -1,0 +1,98 @@
+<!-- o doctype é pra definir HTML 5 (CINCO) -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Fatec Votorantim">
+        <meta name="description" content="Estudo de página responsiva e semântica.">
+        <meta name="keywords" content="fatec, estudo, programação, tecnologia, 
+        computação, desenvolvimento, software, multiplataforma">
+        <link rel="stylesheet" href="https://use.typekit.net/cke3zqr.css">
+        <link rel="stylesheet" href="https://use.typekit.net/cke3zqr.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100;1,500&display=swap"
+            rel="stylesheet">
+        <title>Página de Introdução ao HTML</title>
+        <style>
+            h1,
+            h2 {
+                font-family: "orbitron", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+            }
+
+            li {
+                font-family: 'Josefin Sans', sans-serif;
+            }
+
+            figure {
+                width: min-content;
+            }
+
+            figcaption {
+                padding-left: 1em;
+                padding-right: 1em;
+                font-family: "double-pica", serif;
+                font-weight: 400;
+                font-style: italic;
+                color: crimson;
+                background-color: burlywood;
+            }
+
+            ol {
+                counter-reset: item
+            }
+
+            ol>li {
+                display: block;
+            }
+
+            ol>li:before {
+                content: counters(item, ".") ".";
+                counter-increment: item;
+                padding-right: 10px;
+                margin-left: -20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>HTML - Linguagem de Marcação de Hipertexto</h1>
+            <hr><br>
+        </header>
+        <main>
+            <section>
+                <h2>Cabeçalho - HEAD</h2>
+                <ol>
+                    <li>Head
+                        <ol>
+                            <li>Meta
+                                <ul>
+                                    <li>description</li>
+                                    <li>keywords</li>
+                                    <li>viewport</li>
+                                    <li>author</li>
+                                </ul>
+                            </li>
+                            <li>Link</li>
+                            <li>Title</li>
+                        </ol>
+                    </li>
+                </ol>
+            </section>
+            <section>
+                <h2>Usando figure</h2>
+                <figure>
+                    <img src="https://cdn.jornaldebrasilia.com.br/wp-content/uploads/2022/02/07105802/intercambio-pacotes-1.png"
+                        alt="imagem sobre intercâmbio">
+                    <figcaption>legenda descritiva da imagem</figcaption>
+                </figure>
+            </section>
+        </main>
+    </body>
+
+</html>

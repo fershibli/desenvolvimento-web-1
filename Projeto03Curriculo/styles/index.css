@@ -77,3 +77,24 @@ ul {
 ul>li>* {
     margin: 0px;
 }
+
+.professional-experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.professional-experience>table {
+    width: 95%;
+    border-collapse: collapse;
+}
+
+.professional-experience>table>tbody>tr {
+    text-align: center;
+    border-bottom: 2px solid var(--dark2);
+}
+
+.professional-experience>table>tbody>tr:last-child {
+    border-bottom: unset;
+
+}

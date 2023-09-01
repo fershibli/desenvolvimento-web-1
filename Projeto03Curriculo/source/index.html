@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
         <title>Currículo do Fernando Chibli</title>
-        <meta name="author" content="Fernando Luiz Neme Chibli">
-        <meta name="keywords"
-            content="currículo, curriculum, CV, resume, python, java, javascript, typescript, react, react native, node.js, express.js">
-        <meta name="description"
-            content="Site que contém o currículo de Fernando Luiz Neme Chibli, estudante de Desenvolvimento de Software na Fatec Votorantim">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../styles/index.css">
+        <meta name="author" content="Fernando Luiz Neme Chibli" />
+        <meta
+            name="keywords"
+            content="currículo, curriculum, CV, resume, python, java, javascript, typescript, react, react native, node.js, express.js"
+        />
+        <meta
+            name="description"
+            content="Site que contém o currículo de Fernando Luiz Neme Chibli, estudante de Desenvolvimento de Software na Fatec Votorantim"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles/index.css" />
     </head>
 
-    <body>
-        <header>
+    <body class="preload">
+        <header class="flex-height-section">
             <section class="centered-text">
                 <h1>Curriculum Vitae</h1>
                 <h2>Fernando Luiz Neme Chibli</h2>
@@ -22,71 +25,93 @@
             <section class="horizontal-section">
                 <article>
                     <figure class="profile-picture">
-                        <a href="https://br.linkedin.com/in/fernando-luiz-neme-chibli-25623169">
-                            <img src="../assets/images/profilepicture.jpg" alt="Foto de Perfil de Fernando Chibli">
+                        <a
+                            href="https://br.linkedin.com/in/fernando-luiz-neme-chibli-25623169"
+                        >
+                            <div class="picture-zoom-container">
+                                <img
+                                    src="../assets/images/profilepicture.jpg"
+                                    alt="Foto de Perfil de Fernando Chibli"
+                                    width="360px"
+                                    height="360px"
+                                />
+                            </div>
                         </a>
                         <figcaption>Foto de Fernando Chibli</figcaption>
                     </figure>
                 </article>
-                <article>
+                <article class="contato-article">
                     <h4>Dados para contato</h4>
                     <ul>
-                        <li style="margin-bottom: 0.5em">+55 (11) 95291-2110</li>
-                        <li><a href="mailto:fernando.chibli@fatec.sp.gov.br">fernando.chibli@fatec.sp.gov.br</a></li>
+                        <li>+55 (11) 95291-2110</li>
+                        <li>
+                            <a href="mailto:fernando.chibli@fatec.sp.gov.br"
+                                >fernando.chibli@fatec.sp.gov.br</a
+                            >
+                        </li>
                     </ul>
                 </article>
             </section>
         </header>
-        <hr>
-        <h3 class="centered-text">Formação Acadêmica</h3>
-        <ul class="horizontal-section" style="justify-content: space-between;">
-            <li>
-                <h4>DSM</h4>
-                <p><a href="https://fatecvotorantim.cps.sp.gov.br/" target="_blank">Fatec Votorantim</a></p>
-                <p>2023 - 2026</p>
-            </li>
-            <li style="text-align: right; direction: rtl; margin-right: 2em;">
-                <h4>Jogos Digitais</h4>
-                <p><a href="https://www.fatecsaocaetano.edu.br/" target="_blank">Fatec São Caetano do Sul</a></p>
-                <p><em>2013 - 2017</em></p>
-            </li>
-        </ul>
-        <hr>
-        <h3 class="centered-text">Experiência Profissional</h3>
-        <section class="professional-experience">
-            <table>
-                <tbody>
-                    <tr>
-                        <td>
-                            <h4>Experiência 1</h4>
-                            <p>Texto descritivo</p>
-                        </td>
-                        <td>
-                            lista de tecnologias
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4>Experiência 2</h4>
-                            <p>Texto descritivo</p>
-                        </td>
-                        <td>
-                            lista de tecnologias
-                        </td>
-                    </tr>
+        <hr />
+        <section class="flex-height-section">
+            <h3 class="centered-text">Formação Acadêmica</h3>
+            <ul class="horizontal-section">
+                <li>
+                    <h4>DSM</h4>
+                    <p>
+                        <a
+                            href="https://fatecvotorantim.cps.sp.gov.br/"
+                            target="_blank"
+                            >Fatec Votorantim</a
+                        >
+                    </p>
+                    <p>2023 - 2026</p>
+                </li>
+                <li>
+                    <h4>Jogos Digitais</h4>
+                    <p>
+                        <a
+                            href="https://www.fatecsaocaetano.edu.br/"
+                            target="_blank"
+                            >Fatec São Caetano do Sul</a
+                        >
+                    </p>
+                    <p><em>2013 - 2017</em></p>
+                </li>
+            </ul>
+        </section>
+        <hr />
+        <section class="flex-height-section">
+            <h3 class="centered-text">Experiência Profissional</h3>
+            <article class="professional-experience">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h4>Experiência 1</h4>
+                                <p>Texto descritivo</p>
+                            </td>
+                            <td>lista de tecnologias</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Experiência 2</h4>
+                                <p>Texto descritivo</p>
+                            </td>
+                            <td>lista de tecnologias</td>
+                        </tr>
 
-                    <tr>
-                        <td>
-                            <h4>Experiência 3</h4>
-                            <p>Texto descritivo</p>
-                        </td>
-                        <td>
-                            lista de tecnologias
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                        <tr>
+                            <td>
+                                <h4>Experiência 3</h4>
+                                <p>Texto descritivo</p>
+                            </td>
+                            <td>lista de tecnologias</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
         </section>
     </body>
-
 </html>

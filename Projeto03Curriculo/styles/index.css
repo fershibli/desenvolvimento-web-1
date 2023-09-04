@@ -1,9 +1,9 @@
 :root {
-    --synth-red: #f26389;
-    --synth-purple: #d94395;
-    --synth-dark: #1f0326;
-    --synth-blue: #05f2db;
-    --synth-yellow: #ffcc99;
+    --theme-bg1: #3f598c;
+    --theme-bg2: #8390b0;
+    --theme-white: #ece9f0;
+    --theme-text: #171312;
+    --theme-link: #285b00;
 }
 
 * {
@@ -15,13 +15,7 @@ html,
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--dakr3);
-    background: linear-gradient(
-        176deg,
-        var(--synth-purple),
-        var(--synth-red),
-        var(--synth-blue),
-        var(--synth-yellow)
-    );
+    background: var(--theme-bg2);
 }
 
 .preload {
@@ -36,16 +30,17 @@ a {
     text-decoration: unset;
     font-weight: bold;
     font-style: oblique;
-    color: var(--synth-dark);
-    text-shadow: var(--synth-yellow) 1px -1px 5px;
+    color: var(--theme-link);
+    text-shadow: var(--theme-white) 1px -1px 5px;
 }
 
 a:hover {
-    text-shadow: var(--synth-blue) 1px 0 10px;
+    color: var(--theme-white);
+    text-shadow: var(--theme-link) 1px 0 10px;
 }
 
 a:active {
-    text-shadow: var(--synth-yellow) 1px 0 10px;
+    text-shadow: var(--theme-white) 1px 0 10px;
 }
 
 .flex-height-section {
@@ -82,7 +77,7 @@ a:active {
     width: 320px;
     height: 320px;
     border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
-    box-shadow: 10px 10px 5px 0px var(--synth-dark);
+    box-shadow: 10px 10px 5px 0px var(--theme-bg1);
     transition: all 2s ease-in-out;
 }
 
@@ -94,7 +89,7 @@ a:active {
 
 .picture-zoom-container:hover {
     border-radius: 70% 30% 40% 60% / 60% 70% 30% 40%;
-    box-shadow: -10px -10px 5px 0px var(--synth-dark);
+    box-shadow: -10px -10px 5px 0px var(--theme-bg1);
 }
 
 .picture-zoom-container:hover img {
@@ -102,10 +97,10 @@ a:active {
 }
 
 ul {
-    list-style-type: "\25c6\2800";
+    list-style-type: "\2800\25c6\2800";
 }
 
-ul > li > * {
+li > * {
     margin: 0px;
 }
 
@@ -144,7 +139,7 @@ li:last-child {
 }
 
 .professional-experience > table tr {
-    border-bottom: 2px solid var(--synth-dark);
+    border-bottom: 2px solid var(--theme-text);
 }
 
 .professional-experience > table td {

@@ -51,6 +51,10 @@ a:active {
     height: 100vh;
 }
 
+.align-center {
+    align-items: center;
+}
+
 .no-max-height {
     height: unset;
 }
@@ -124,6 +128,15 @@ li {
 
 li:last-child {
     padding-bottom: unset;
+}
+
+.languages-list > li {
+    padding-bottom: 2em;
+}
+
+.technologies-article {
+    text-align: justify;
+    width: 50%;
 }
 
 .professional-experience {

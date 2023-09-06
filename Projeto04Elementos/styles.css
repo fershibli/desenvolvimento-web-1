@@ -1,0 +1,21 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+figcaption {
+    font-size: xx-small;
+}
+
+table,
+th,
+td {
+    border: 0.5em solid black;
+    border-collapse: collapse;
+    background-color: gold;
+    border-style: inset;
+}
+
+th:hover,
+td:hover {
+    background-color: tomato;
+}

@@ -1,0 +1,14 @@
+table {
+    border: groove 0.25em darkslategrey;
+    border-collapse: collapse;
+}
+
+tr {
+    margin: 0;
+}
+
+th,
+td {
+    border: solid 0.175em darkslategray;
+    padding: 0.5em;
+}

@@ -1,0 +1,13 @@
+figure {
+    position: relative;
+    width: fit-content;
+}
+
+figcaption {
+    color: white;
+    display: block;
+    position: absolute;
+    float: right;
+    bottom: 0.5em;
+    right: 0.5em;
+}

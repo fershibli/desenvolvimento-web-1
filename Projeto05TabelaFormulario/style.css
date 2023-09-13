@@ -12,3 +12,16 @@ td {
     border: solid 0.175em darkslategray;
     padding: 0.5em;
 }
+
+input {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+input[type="submit"] {
+    background: aquamarine;
+}
+
+input[type="reset"] {
+    background: crimson;
+}

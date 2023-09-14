@@ -3,5 +3,17 @@ nav>ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    margin-right: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-right: 0.5em;
+    background-color: lightgrey;
+}
+
+nav>div {
+    background-color: lightgrey;
+    height: fit-content;
+}
+
+.vl {
+    border-left: 1px solid dimgrey;
 }

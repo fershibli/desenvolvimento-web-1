@@ -1,0 +1,7 @@
+nav>ul {
+    width: -webkit-fill-available;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 2em;
+}

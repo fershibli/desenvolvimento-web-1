@@ -1,0 +1,21 @@
+section>hr {
+    position: relative;
+    border: none;
+    height: 2em;
+    background: lightgray;
+}
+
+section>article>h3 {
+    width: 100%;
+    background: lightgray;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+section>article>ul {
+    text-align: left;
+}
+
+section>article>ul>li {
+    margin-bottom: 0.75em;
+}

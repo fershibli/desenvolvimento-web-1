@@ -9,9 +9,17 @@ nav>ul {
     background-color: lightgrey;
 }
 
+nav>ul>li {
+    text-align: center;
+    margin: 0.5em;
+}
+
 nav>div {
     background-color: lightgrey;
-    height: fit-content;
+    padding: 0.5em;
+    width: max-content;
+    height: auto;
+    margin: 0;
 }
 
 .vl {

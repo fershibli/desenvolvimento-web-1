@@ -1,12 +1,17 @@
 footer>button {
     margin: 1em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-size: large;
     font-weight: bold;
     color: var(--primary-background-color);
     background-color: var(--primary-font-color);
     border: none;
-    border-radius: 1em;
+    border-radius: 25em;
+}
+
+footer>button>i {
+    margin-right: 1em
 }

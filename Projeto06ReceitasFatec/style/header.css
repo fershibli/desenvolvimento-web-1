@@ -1,4 +1,5 @@
 header h1 {
+    text-transform: uppercase;
     color: var(--primary-font-color);
 }
 

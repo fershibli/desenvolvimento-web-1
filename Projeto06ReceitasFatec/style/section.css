@@ -6,11 +6,13 @@ section>hr {
 }
 
 section>h2 {
+    text-transform: uppercase;
     color: var(--primary-font-color);
 }
 
 section>article>h3 {
     width: 100%;
+    text-transform: uppercase;
     color: var(--secondary-font-color);
     background: var(--secondary-background-color);
     padding-top: 0.5em;

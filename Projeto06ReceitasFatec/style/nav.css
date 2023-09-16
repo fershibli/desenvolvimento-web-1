@@ -1,3 +1,8 @@
+nav {
+    font-size: small;
+    text-transform: uppercase;
+}
+
 nav>ul {
     width: -webkit-fill-available;
     list-style-type: none;
@@ -35,13 +40,13 @@ nav>div>p {
 
 nav>div>p:first-child {
     color: var(--primary-font-color);
-    font-size: medium;
     font-weight: bold;
 }
 
 nav>div>p:last-child {
     color: var(--secondary-font-color);
-    font-size: small;
+    font-size: smaller;
+    text-transform: none;
 }
 
 .vl {

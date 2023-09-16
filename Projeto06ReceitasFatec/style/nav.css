@@ -3,8 +3,8 @@ nav>ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
     margin-right: 0.5em;
     background-color: var(--secondary-background-color);
 }
@@ -28,5 +28,7 @@ nav>div {
 }
 
 .vl {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
     border-left: 1px solid var(--secondary-font-color);
 }

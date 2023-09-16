@@ -3,12 +3,24 @@ header h1 {
     color: var(--primary-font-color);
 }
 
-header i {
+header .rating-stars {
+    cursor: default;
+}
+
+header .rating-stars>i {
     background: linear-gradient(to bottom, var(--light-star-color) 0%, var(--dark-star-color) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+header .rating-stars>i:hover {
+    background: var(--light-star-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 header p {
     font-size: x-small;

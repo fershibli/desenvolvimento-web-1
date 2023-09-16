@@ -1,14 +1,16 @@
-h1 {
+header h1 {
     color: var(--primary-font-color);
 }
 
-figure {
+
+
+header figure {
     position: relative;
     width: fit-content;
     margin: 0;
 }
 
-figcaption {
+header figure>figcaption {
     color: var(--primary-background-color);
     display: block;
     position: absolute;

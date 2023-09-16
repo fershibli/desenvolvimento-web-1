@@ -12,6 +12,7 @@ header i {
 header p {
     font-size: x-small;
     margin: 0;
+    color: var(--secondary-font-color)
 }
 
 header figure {

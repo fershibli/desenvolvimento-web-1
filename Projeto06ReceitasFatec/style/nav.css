@@ -24,7 +24,24 @@ nav>div {
     width: max-content;
     height: auto;
     margin: 0;
-    color: var(--text-primary);
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+nav>div>p {
+    white-space: nowrap;
+    margin: 0;
+}
+
+nav>div>p:first-child {
+    color: var(--primary-font-color);
+    font-size: medium;
+    font-weight: bold;
+}
+
+nav>div>p:last-child {
+    color: var(--secondary-font-color);
+    font-size: small;
 }
 
 .vl {

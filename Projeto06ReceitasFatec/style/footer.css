@@ -1,4 +1,4 @@
-footer>button {
+footer button {
     margin: 1em;
     padding-top: 0.75em;
     padding-bottom: 0.75em;
@@ -12,6 +12,10 @@ footer>button {
     border-radius: 25em;
 }
 
-footer>button>i {
+footer button:hover {
+    cursor: pointer;
+}
+
+footer button>i {
     margin-right: 1em
 }

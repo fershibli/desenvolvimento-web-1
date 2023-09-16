@@ -2,7 +2,12 @@ header h1 {
     color: var(--primary-font-color);
 }
 
-
+header i {
+    background: linear-gradient(to bottom, var(--light-star-color) 0%, var(--dark-star-color) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 header figure {
     position: relative;

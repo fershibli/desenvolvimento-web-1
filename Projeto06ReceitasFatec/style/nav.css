@@ -6,7 +6,7 @@ nav>ul {
     padding-left: 2em;
     padding-right: 2em;
     margin-right: 0.5em;
-    background-color: lightgrey;
+    background-color: var(--secondary-background-color);
 }
 
 nav>ul>li {
@@ -14,14 +14,19 @@ nav>ul>li {
     margin: 0.5em;
 }
 
+nav>ul>li>div:nth-child(odd) {
+    color: var(--primary-font-color);
+}
+
 nav>div {
-    background-color: lightgrey;
+    background-color: var(--secondary-background-color);
     padding: 0.5em;
     width: max-content;
     height: auto;
     margin: 0;
+    color: var(--text-primary);
 }
 
 .vl {
-    border-left: 1px solid dimgrey;
+    border-left: 1px solid var(--secondary-font-color);
 }

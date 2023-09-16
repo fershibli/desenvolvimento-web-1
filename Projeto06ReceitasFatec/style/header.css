@@ -9,6 +9,11 @@ header i {
     -webkit-text-fill-color: transparent;
 }
 
+header p {
+    font-size: x-small;
+    margin: 0;
+}
+
 header figure {
     position: relative;
     width: fit-content;

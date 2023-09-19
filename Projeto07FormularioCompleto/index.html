@@ -20,10 +20,18 @@
                 <label for="senha-usuario">Senha</label>
                 <input type="password" id="senha-usuario" name="senhaUsuario" placeholder="mínimo 8 caracteres"
                     minlength="8" maxlength="32" size="50" required>
-
             </fieldset>
             <fieldset>
                 <legend>Dados de Cobrança</legend>
+
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" value="Sorocaba" size="30">
+
+                <label for="uf">Estado</label>
+                <input type="text" id="uf" name="uf" value="SP" minlength="2" maxlength="2" size="2" readonly>
+
+                <label for="pais">País</label>
+                <input type="text" id="pais" name="cidade" value="Brasil" disabled>
             </fieldset>
             <button> Cadastrar Button </button>
             <input type="submit" value="Cadastrar Input">

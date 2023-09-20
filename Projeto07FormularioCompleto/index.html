@@ -28,10 +28,47 @@
                 <input type="text" id="cidade" name="cidade" value="Sorocaba" size="30">
 
                 <label for="uf">Estado</label>
-                <input type="text" id="uf" name="uf" value="SP" minlength="2" maxlength="2" size="2" readonly>
+                <select id="uf" name="uf" value="SP">
+                    <optgroup label="Região Norte">
+                        <option value="AC">AC</option>
+                        <option value="AM">AM</option>
+                        <option value="AP">AP</option>
+                        <option value="PA">PA</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="TO">TO</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="AL">AL</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="MA">MA</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="PB">PB</option>
+                        <option value="RN">RN</option>
+                    </optgroup>
+                    <optgroup label="Região Centro-Oeste">
+                        <option value="DF">DF</option>
+                        <option value="GO">GO</option>
+                        <option value="MS">MS</option>
+                        <option value="MT">MT</option>
+                    </optgroup>
+                    <optgroup label="Região Sudeste">
+                        <option value="ES">ES</option>
+                        <option value="MG">MG</option>
+                        <option value="RJ">RJ</option>
+                        <option value="SP">SP</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="PR">PR</option>
+                        <option value="RJ">RJ</option>
+                        <option value="SC">SC</option>
+                    </optgroup>
+                </select>
 
                 <label for="pais">País</label>
-                <input type="text" id="pais" name="cidade" value="Brasil" disabled>
+                <input type="text" id="pais" name="cidade" value="Brasil" readonly>
             </fieldset>
             <button> Cadastrar Button </button>
             <input type="submit" value="Cadastrar Input">

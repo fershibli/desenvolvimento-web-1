@@ -33,17 +33,17 @@ nav>div {
     padding-right: 1em;
 }
 
-nav>div>p {
+nav>div p {
     white-space: nowrap;
     margin: 0;
 }
 
-nav>div>p:first-child {
+nav>div p:first-child {
     color: var(--primary-font-color);
     font-weight: bold;
 }
 
-nav>div>p:last-child {
+nav>div p:last-child {
     color: var(--secondary-font-color);
     font-size: smaller;
     text-transform: none;
@@ -53,4 +53,9 @@ nav>div>p:last-child {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     border-left: 1px solid var(--secondary-font-color);
+}
+
+.profile-picture {
+    height: 2.5em;
+    margin-right: 0.25em;
 }

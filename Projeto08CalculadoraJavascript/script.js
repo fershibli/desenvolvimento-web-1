@@ -9,5 +9,5 @@ function somar() {
 
 function multiplicar() {
     const resultado = (Number(elemento_n1.value) * Number(elemento_n2.value));
-    elemento_resposta.innerHTML = "Número 1 + Número 2 = " + resultado;
+    elemento_resposta.innerHTML = "Número 1 * Número 2 = " + resultado;
 }

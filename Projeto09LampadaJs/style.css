@@ -9,9 +9,11 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .verticalFlex {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }

@@ -12,6 +12,18 @@ function toggleLampada(elementId, ligadoAttr) {
     }
 }
 
+function switchLampada(imageId) {
+    const element = document.getElementById(imageId)
+    if (element.removido) {
+        element.src = "./img/luzDesligada.gif"
+        element.ligado = false
+        element.removido = false
+    } else {
+        element.src = ""
+        element.removido = true
+    }
+}
+
 for (let i = 0; i < 1000; i++) {
     const img = document.createElement('img')
     const id = `lampada${i}`
@@ -20,6 +32,7 @@ for (let i = 0; i < 1000; i++) {
     img.addEventListener('click', () => toggleLampada(id))
     button = document.createElement('button')
     button.innerText = 'Trocar'
+    button.addEventListener('click', () => switchLampada(id))
     div = document.createElement('div')
     div.className = 'verticalFlex'
     div.appendChild(img)

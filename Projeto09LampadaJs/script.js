@@ -21,6 +21,7 @@ for (let i = 0; i < 1000; i++) {
     button = document.createElement('button')
     button.innerText = 'Trocar'
     div = document.createElement('div')
+    div.className = 'verticalFlex'
     div.appendChild(img)
     div.appendChild(button)
     main.getElementsByTagName('div')[0].appendChild(div)

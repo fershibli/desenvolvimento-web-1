@@ -4,3 +4,14 @@ body {
     color: white;
     padding: 0 1em;
 }
+
+.horizontalFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.verticalFlex {
+    display: flex;
+    flex-direction: column;
+}

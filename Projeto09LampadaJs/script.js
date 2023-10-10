@@ -18,5 +18,10 @@ for (let i = 0; i < 1000; i++) {
     img.id = id
     img.src = './img/LuzDesligada.gif'
     img.addEventListener('click', () => toggleLampada(id))
-    main.getElementsByTagName('div')[0].appendChild(img)
+    button = document.createElement('button')
+    button.innerText = 'Trocar'
+    div = document.createElement('div')
+    div.appendChild(img)
+    div.appendChild(button)
+    main.getElementsByTagName('div')[0].appendChild(div)
 }

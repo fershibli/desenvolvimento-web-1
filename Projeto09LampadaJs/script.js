@@ -1,8 +1,9 @@
 main = document.getElementsByTagName('main')[0]
 
-function toggleLampada(elementId) {
+function toggleLampada(elementId, ligadoAttr) {
     element = document.getElementById(elementId)
-    if (element.ligado) {
+    ligado = element.ligado || ligadoAttr
+    if (ligado) {
         element.src = "./img/luzDesligada.gif"
         element.ligado = false
     } else {
@@ -13,8 +14,9 @@ function toggleLampada(elementId) {
 
 for (let i = 0; i < 1000; i++) {
     img = document.createElement('img')
-    img.id = `lampada${i}`
+    const id = `lampada${i}`
+    img.id = id
     img.src = './img/LuzDesligada.gif'
-    img.addEventListener('click', () => toggleLampada(`lampada${i}`))
+    img.addEventListener('click', () => toggleLampada(id))
     main.getElementsByTagName('div')[0].appendChild(img)
 }

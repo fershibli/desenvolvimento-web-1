@@ -15,11 +15,10 @@ function toggleLampada(elementId, ligadoAttr) {
 function switchLampada(imageId) {
     const element = document.getElementById(imageId)
     if (element.removido) {
-        element.src = "./img/luzDesligada.gif"
-        element.ligado = false
+        element.style.display = "Initial"
         element.removido = false
     } else {
-        element.src = ""
+        element.style.display = "None"
         element.removido = true
     }
 }

@@ -28,6 +28,7 @@ for (let i = 0; i < 1000; i++) {
     const id = `lampada${i}`
     img.id = id
     img.src = './img/LuzDesligada.gif'
+    img.className = 'imagemLampada'
     img.addEventListener('click', () => toggleLampada(id))
     button = document.createElement('button')
     button.innerText = 'Trocar'

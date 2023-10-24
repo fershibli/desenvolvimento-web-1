@@ -6,6 +6,8 @@ function calcularValorPacote() {
 
     if (qtdPacotes == 1)
         return parseInt(pacotes[0].value);
+    
+    return 0;
 }
 
 function calcularValorServicos() {

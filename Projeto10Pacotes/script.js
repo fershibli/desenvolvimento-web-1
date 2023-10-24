@@ -1,14 +1,23 @@
 let valorPacote = 0;
 
-function calcularDesconto() {
+function calcularValorPacote() {
     let pacotes = document.querySelectorAll("input[name='pacotes']:checked");
     let qtdPacotes = pacotes.length;
 
     if (qtdPacotes == 1)
-        console.log(pacotes[0].value);
+        return parseInt(pacotes[0].value);
+}
 
-    let servicos = document.querySelectorAll("input[type='checkbox']:checked")
+function calcularValorServicos() {
+    let valorServicos = 0
+    let servicos = document.querySelectorAll("input[type='checkbox']:checked");
     for (let i = 0; i < servicos.length; i++) {
-        console.log(servicos[i].value);
+        valorServicos += parseInt(servicos[i].value);
     }
+    return valorServicos;
+}
+
+function calcularDesconto() {
+    valorPacote = calcularValorPacote() + calcularValorServicos();
+    console.log(valorPacote)
 }

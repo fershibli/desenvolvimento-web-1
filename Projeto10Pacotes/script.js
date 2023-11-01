@@ -6,7 +6,7 @@ function calcularValorPacote() {
 
     if (qtdPacotes == 1)
         return parseInt(pacotes[0].value);
-    
+
     return 0;
 }
 
@@ -20,6 +20,12 @@ function calcularValorServicos() {
 }
 
 function calcularDesconto() {
-    valorPacote = calcularValorPacote() + calcularValorServicos();
+    const valorPacoteCalculado = calcularValorPacote();
+    const valorServicoCalculado = calcularValorServicos();
+    valorPacote = valorPacoteCalculado + valorServicoCalculado;
+    const texto = document.getElementById("texto-final");
+    const nome = document.getElementById("nome").value;
+    texto.innerHTML = `${nome}, seu pacote custará ${valorPacoteCalculado} e os serviços adicionais custarão ${valorServicoCalculado}.`
     console.log(valorPacote)
 }
+

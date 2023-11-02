@@ -7,10 +7,110 @@
         <title>Lanchonete Bootstrap</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     </head>
 
     <body>
+        <main class="container">
+            <div class="card text-subtle bg-info">
+                <div class="card-body">
+                    <p style="margin: 0px; padding: 0px;"><strong>Hamburgueria X-Gostoso</strong></p>
+                    <p style="margin-top: 0px; padding-top: 0px;"><small>17:34:16</small></p>
+                </div>
+            </div>
+            <section class="container" style="padding-top:1em">
+                <div class="row">
+                    <div class="col-6">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="text" class="form-control" id="telefone">
+                    </div>
+                    <div class="col-6">
+                        <label for="nomeCliente" class="form-label">Nome do Cliente</label>
+                        <input type="text" class="form-control" id="nomeCliente">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="combos" class="form-label">Combos</label>
+                        <select class="form-select" aria-label="Default select example" id="combos">
+                            <option selected value="xsaudavel">X-Saudável</option>
+                            <option value="xvegetariano">X-Vegetariano</option>
+                            <option value="xvegano">X-Vegano</option>
+                            <option value="xgostoso">X-Gostoso</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <label class="form-label">Adicionais</label>
+                        <div style="padding-top: 1em;">
+                            <input class="form-check-input" type="checkbox" value="" id="bacon" checked>
+                            <label class="form-check-label" for="bacon">
+                                Bacon
+                            </label>
+                        </div>
+                        <div class="row justify-content-between">
+                            <div class="col">
+                                <input class="form-check-input" type="checkbox" value="" id="cheddar">
+                                <label class="form-check-label" for="cheddar">
+                                    Cheddar
+                                </label>
+                            </div>
+                            <div class="col">
 
+                                <input style="padding:max-content;" class="form-check-input" type="checkbox" value=""
+                                    id="picles">
+                                <label class="form-check-label" for="picles">
+                                    Picles
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <label class form-label>Entrega ?</label>
+                        <div style="padding-top: 1em;">
+                            <div class="form-check">
+                                <input class=" form-check-input" type="radio" name="entrega" id="viagem">
+                                <label class="form-check-label" for="viagem" checked>
+                                    Para Viagem
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="entrega" id="balcao">
+                                <label class="form-check-label" for="balcao">
+                                    Balcão
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top:1em;">
+                    <button type="button" class="btn btn-primary">
+                        <i class="ri-calculator-fill"></i>
+                        Calcular
+                    </button>
+                    <button type="button" class="btn btn-primary" style="margin-left:1em; margin-right:1em">
+                        <i class="ri-shopping-cart-fill"></i>
+                        Novo Pedido
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        <i class="ri-file-paper-fill"></i>
+                        Recibo
+                    </button>
+                </div>
+            </section>
+            <section class="container">
+                <div>
+                    <label for="total" class="form-label">Total a pagar:</label>
+                    <input type="text" class="form-control" id="total" disabled>
+
+                </div>
+                <div style='margin-top:1em;'>
+                    <label for="descricaoPedido" class="form-label">Descrição do pedido</label>
+                    <textarea class="form-control" id="descricaoPedido" rows="3" disabled></textarea>
+
+                </div>
+            </section>
+        </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous"></script>

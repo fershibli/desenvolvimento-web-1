@@ -1,0 +1,13 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    background-color: burlywood;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+legend {
+    padding-bottom: 1em;
+}

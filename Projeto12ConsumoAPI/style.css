@@ -11,3 +11,8 @@ section {
 legend {
     padding-bottom: 1em;
 }
+
+.from-cep {
+    width: calc(100% - 0.5em);
+    margin-bottom: 0.5em;
+}

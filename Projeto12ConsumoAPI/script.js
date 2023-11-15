@@ -1,5 +1,10 @@
 const submitCep = document.getElementById('submitCep');
 const inputCep = document.getElementById('inputCep');
+const logradouroFromCep = document.getElementById("logradouroFromCep");
+const complementoFromCep = document.getElementById("complementoFromCep");
+const bairroFromCep = document.getElementById("bairroFromCep");
+const localidadeFromCep = document.getElementById("localidadeFromCep");
+const ufFromCep = document.getElementById("ufFromCep");
 
 function cepMask(event) {
     if (event.keyCode == 8) { //backspace
@@ -21,8 +26,11 @@ submitCep.addEventListener("click", async function () {
         return alert("Digite seu cep!");
     }
     cep = inputCep.value.replace(/\D/g, '');
-    fetch(`https://viacep.com.br/ws/${cep}/json/`)
-        .then(value => {
-            console.log(value.json())
-        });
+    cepData = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
+        .then(response => response.json())
+    logradouroFromCep.value = cepData.logradouro
+    complementoFromCep.value = cepData.complemento
+    bairroFromCep.value = cepData.bairro
+    localidadeFromCep.value = cepData.localidade
+    ufFromCep.value = cepData.uf
 })

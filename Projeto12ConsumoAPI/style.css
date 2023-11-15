@@ -19,12 +19,7 @@ hr {
     margin-bottom: 0.75em;
 }
 
-.from-cep {
+.full-input {
     width: calc(100% - 0.5em);
     margin-bottom: 0.5em;
-}
-
-.input-endereco {
-    display: inline-flex;
-    flex: 1;    
 }

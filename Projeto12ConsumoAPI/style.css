@@ -6,13 +6,25 @@ section {
     background-color: burlywood;
     padding: 1em;
     border-radius: 1em;
+    margin-bottom: 1em;
 }
 
 legend {
     padding-bottom: 1em;
+    font-weight: bold;
+}
+
+hr {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
 }
 
 .from-cep {
     width: calc(100% - 0.5em);
     margin-bottom: 0.5em;
+}
+
+.input-endereco {
+    display: inline-flex;
+    flex: 1;    
 }

@@ -34,6 +34,7 @@
                         <label for="combos" class="form-label">Combos</label>
                         <select class="form-select" aria-label="Default select example" id="combos">
                             <option selected value="xsaudavel">X-Saudável</option>
+                            <option value="xtudo">X-Tudo</option>
                             <option value="xvegetariano">X-Vegetariano</option>
                             <option value="xvegano">X-Vegano</option>
                             <option value="xgostoso">X-Gostoso</option>
@@ -42,14 +43,15 @@
                     <div class="col-3">
                         <label class="form-label">Adicionais</label>
                         <div style="padding-top: 1em;">
-                            <input class="form-check-input" type="checkbox" value="" id="bacon" checked>
+                            <input class="form-check-input" type="checkbox" value="" id="bacon" checked
+                                name="adicionais">
                             <label class="form-check-label" for="bacon">
                                 Bacon
                             </label>
                         </div>
                         <div class="row justify-content-between">
                             <div class="col">
-                                <input class="form-check-input" type="checkbox" value="" id="cheddar">
+                                <input class="form-check-input" type="checkbox" value="" id="cheddar" name="adicionais">
                                 <label class="form-check-label" for="cheddar">
                                     Cheddar
                                 </label>
@@ -57,7 +59,7 @@
                             <div class="col">
 
                                 <input style="padding:max-content;" class="form-check-input" type="checkbox" value=""
-                                    id="picles">
+                                    id="picles" name="adicionais">
                                 <label class="form-check-label" for="picles">
                                     Picles
                                 </label>
@@ -65,26 +67,30 @@
                         </div>
                     </div>
                     <div class="col-3">
-                        <label class form-label>Entrega ?</label>
-                        <div style="padding-top: 1em;">
-                            <div class="form-check">
-                                <input class=" form-check-input" type="radio" name="entrega" id="viagem">
-                                <label class="form-check-label" for="viagem" checked>
-                                    Para Viagem
-                                </label>
+                        <form id="entregaForm">
+                            <label class form-label>Entrega ?</label>
+                            <div style="padding-top: 1em;">
+                                <div class="form-check">
+                                    <input class=" form-check-input" type="radio" name="entrega" value="viagem"
+                                        id="viagem">
+                                    <label class="form-check-label" for="viagem" checked>
+                                        Para Viagem
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="entrega" value="balcao"
+                                        id="balcao">
+                                    <label class="form-check-label" for="balcao">
+                                        Balcão
+                                    </label>
+                                </div>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="entrega" id="balcao">
-                                <label class="form-check-label" for="balcao">
-                                    Balcão
-                                </label>
-                            </div>
-                        </div>
+                        </form>
 
                     </div>
                 </div>
                 <div class="text-center" style="margin-top:1em;">
-                    <button type="button" class="btn btn-primary">
+                    <button type="button" class="btn btn-primary" onclick="calcularTotal()">
                         <i class="ri-calculator-fill"></i>
                         Calcular
                     </button>
@@ -114,6 +120,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
     </body>
 
 </html>

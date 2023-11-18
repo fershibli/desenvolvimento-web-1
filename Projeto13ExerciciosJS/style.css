@@ -1,0 +1,32 @@
+html,
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+fieldset {
+    border: 1px solid gray;
+    padding: 12px;
+}
+
+legend {
+    font-size: medium;
+    padding: 0 10px;
+}
+
+fieldset>article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+}
+
+fieldset>article>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-size: small;
+}

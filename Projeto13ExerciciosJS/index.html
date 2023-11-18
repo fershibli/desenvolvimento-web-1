@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Projeto_JS1</title>
+        <link rel="stylesheet" href="style.css">
         <script src='scripts/ex1.js' defer></script>
     </head>
 
@@ -13,7 +14,30 @@
             <h1>Projeto_JS1</h1>
         </header>
         <main>
-            
+            <section>
+                <fieldset>
+                    <legend>Exercício 1 : Calculadora de Aumento</legend>
+                    <article>
+                        <div>
+                            <label for="salario">Salário</label>
+                            <input id="salario" type="number">
+                        </div>
+                        <div>
+                            <label for="aumento">Aumento (%)</label>
+                            <input id="aumento" type="number">
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <label>Resultado</label>
+                            <p id="resultadoEx1"></p>
+                        </div>
+                    </article>
+                    <article>
+                        <button onclick="ex1calcular()">Calcular</button>
+                    </article>
+                </fieldset>
+            </section>
         </main>
     </body>
 

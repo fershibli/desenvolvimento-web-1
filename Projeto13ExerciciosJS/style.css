@@ -3,6 +3,10 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+section {
+    margin-bottom: 2em;
+}
+
 fieldset {
     border: 1px solid gray;
     padding: 12px;

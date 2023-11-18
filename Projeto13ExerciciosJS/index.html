@@ -7,6 +7,7 @@
         <title>Projeto_JS1</title>
         <link rel="stylesheet" href="style.css">
         <script src='scripts/ex1.js' defer></script>
+        <script src='scripts/ex2.js' defer></script>
     </head>
 
     <body>
@@ -16,7 +17,7 @@
         <main>
             <section>
                 <fieldset>
-                    <legend>Exercício 1 : Calculadora de Aumento</legend>
+                    <legend>Exercício 1 : Aumento de Salário</legend>
                     <article>
                         <div>
                             <label for="salario">Salário</label>
@@ -34,7 +35,31 @@
                         </div>
                     </article>
                     <article>
-                        <button onclick="ex1calcular()">Calcular</button>
+                        <button onclick="calcularEx1()">Calcular</button>
+                    </article>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <legend>Exercício 2 : Área de Triângulo</legend>
+                    <article>
+                        <div>
+                            <label for="base">Base</label>
+                            <input id="base" type="number">
+                        </div>
+                        <div>
+                            <label for="altura">Altura</label>
+                            <input id="altura" type="number">
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <label>Resultado</label>
+                            <input id="resultadoEx2" disabled>
+                        </div>
+                    </article>
+                    <article>
+                        <button onclick="calcularEx2()">Calcular</button>
                     </article>
                 </fieldset>
             </section>

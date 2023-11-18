@@ -1,4 +1,4 @@
-function ex1calcular() {
+function calcularEx1() {
     const salario = parseFloat(document.getElementById('salario').value);
     const aumento = parseFloat(document.getElementById('aumento').value) / 100;
     const resultadoElemento = document.getElementById('resultadoEx1');

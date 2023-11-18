@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="style.css">
         <script src='scripts/ex1.js' defer></script>
         <script src='scripts/ex2.js' defer></script>
+        <script src='scripts/ex3.js' defer></script>
     </head>
 
     <body>
@@ -60,6 +61,30 @@
                     </article>
                     <article>
                         <button onclick="calcularEx2()">Calcular</button>
+                    </article>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <legend>Exercício 3 : Média Ponderada</legend>
+                    <article>
+                        <div>
+                            <label for="nota1">1ª nota (30%)</label>
+                            <input id="nota1" type="number">
+                        </div>
+                        <div>
+                            <label for="nota2">2ª nota (70%)</label>
+                            <input id="nota2" type="number">
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <label>Resultado</label>
+                            <label id="resultadoEx3" disabled></label>
+                        </div>
+                    </article>
+                    <article>
+                        <button onclick="calcularEx3()">Calcular</button>
                     </article>
                 </fieldset>
             </section>

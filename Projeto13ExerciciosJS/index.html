@@ -11,6 +11,7 @@
         <script src='scripts/ex3.js' defer></script>
         <script src='scripts/ex4.js' defer></script>
         <script src='scripts/ex5.js' defer></script>
+        <script src='scripts/ex6.js' defer></script>
     </head>
 
     <body>
@@ -129,6 +130,33 @@
                     </article>
                     <article>
                         <button onclick="calcularEx5()">Calcular</button>
+                    </article>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <legend>Exercício 6 : Salário Líquido com desconto</legend>
+                    <article>
+                        <div>
+                            <label for="salarioBruto">Salário Bruto Mensal</label>
+                            <input id="salarioBruto" type="number">
+                        </div>
+                        <div>
+                            <label for="horasTrabalhadas">Horas trabalhadas semanais</label>
+                            <input id="horasTrabalhadas" type="number" value="62">
+                        </div>
+                        <div>
+                            <label for="refeicoes">Refeições no período</label>
+                            <input id="refeicoes" type="number">
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <textarea id="resultadoEx6" rows="3" cols="70" disabled></textarea>
+                        </div>
+                    </article>
+                    <article>
+                        <button onclick="calcularEx6()">Calcular</button>
                     </article>
                 </fieldset>
             </section>

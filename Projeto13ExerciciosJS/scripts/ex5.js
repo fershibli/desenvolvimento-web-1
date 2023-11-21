@@ -1,14 +1,14 @@
-function calcularEx3() {
-    const nota1 = parseFloat(document.getElementById('nota1').value) * 0.3;
-    const nota2 = parseFloat(document.getElementById('nota2').value) * 0.7;
-    const resultadoElemento = document.getElementById('resultadoEx3');
+function calcularEx5() {
+    const gasolina = parseFloat(document.getElementById('gasolina').value);
+    const distancia = parseFloat(document.getElementById('distancia').value);
+    const resultadoElemento = document.getElementById('resultadoEx5');
 
-    if (!nota1 || !nota2) {
-        resultadoElemento.innerHTML = "ERRO: digite a 1ª e a 2ª nota."
+    if (!gasolina || !distancia) {
+        resultadoElemento.innerHTML = "ERRO: preencha os campos de gasolina e distância."
         resultadoElemento.style.color = "red";
         return;
     }
 
-    resultadoElemento.innerHTML = nota1 + nota2;
+    resultadoElemento.innerHTML = `O consumo médio foi de ${distancia/gasolina}km/L`;
     resultadoElemento.style.color = "";
 }

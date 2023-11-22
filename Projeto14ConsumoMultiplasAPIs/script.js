@@ -36,7 +36,7 @@ async function searchWeather() {
     const flag_image = document.getElementById('flagResponse');
 
     let cidade;
-    if (cep_input) {
+    if (cep_input.value) {
         const address = await fetchAdressFromCEP(cep_input.value);
         cidade = address.localidade;
         cidade_input.value = cidade

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Previsão do Tempo por CEP</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="./script.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Previsão do Tempo</h1>
+            <p>por CEP ou Cidade</p>
+            <hr>
+        </header>
+        <main>
+            <section>
+                <article>
+                    <label for="inputCep">CEP: </label>
+                    <input id="inputCep" type="text" placeholder="Digite seu CEP" onkeyup="cepMask(event)"
+                        maxlength="9">
+                </article>
+                <article>
+                    <label for="inputCidade">Cidade: </label>
+                    <input id="inputCidade" type="text" placeholder="ou digite sua cidade">
+                </article>
+                <button id="searchWeather">Pesquisar</button>
+                <hr>
+                <section>
+                    <article>
+                        <p id="weatherResponse"></p>
+                        <img id="flagResponse">
+                    </article>
+                </section>
+        </main>
+    </body>
+
+</html>
